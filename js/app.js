@@ -1,17 +1,23 @@
-var myApp = angular.module('myApp', [
+var app = angular.module('myApp', [
   'ngRoute',
-  'appControllers'
+  'appControllers',
+  'appDirectives'
 ]);
  
 
 
-myApp.config(['$routeProvider',
-  function($routeProvider) {
+app.config(['$routeProvider','$locationProvider',
+  function($routeProvider,$locationProvider) {
+ 
+
     $routeProvider.
       when('/', {
         templateUrl: '/partials/home.html',
         controller: 'main'
       })
+      .when('/sample', {
+        templateUrl: '/partials/sample.html'
+      })      
       .otherwise({
         redirectTo: '/'
       });

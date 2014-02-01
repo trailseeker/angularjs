@@ -1,6 +1,6 @@
-var appControllers = angular.module('appControllers', []);
+var appCtrl = angular.module('appControllers', []);
  
-appControllers.controller('main', ['$scope', '$http',
+appCtrl.controller('main', ['$scope', '$http',
   function ($scope, $http) {
 
 
@@ -16,7 +16,7 @@ appControllers.controller('main', ['$scope', '$http',
 
   }]);
  
-/*appControllers.controller('detailCtrl', ['$scope', '$routeParams',
+/*appCtrl.controller('detailCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     $scope.params = $routeParams.productID;
   }]);*/
