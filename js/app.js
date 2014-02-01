@@ -8,7 +8,8 @@ var app = angular.module('myApp', [
 
 app.config(['$routeProvider','$locationProvider',
   function($routeProvider,$locationProvider) {
- 
+    //$locationProvider.html5Mode(true);
+
 
     $routeProvider.
       when('/', {
