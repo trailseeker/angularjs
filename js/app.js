@@ -1,15 +1,21 @@
 var app = angular.module('myApp', [
-  'ngRoute',
+  'ngRoute','ngCookies',
   'appControllers',
   'appDirectives'
 ]);
  
 
 
+
+
+
 app.config(['$routeProvider','$locationProvider',
-  function($routeProvider,$locationProvider) {
+  function($routeProvider,$locationProvider,$cookies) {
+    
     //$locationProvider.html5Mode(true);
 
+
+   
 
     $routeProvider.
       when('/', {

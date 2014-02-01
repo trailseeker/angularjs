@@ -6,13 +6,18 @@ appCtrl.controller('main', ['$scope', '$http',
 
   	console.log("main controller loaded! ");
 
-  /*    
-  	$http.get('data.json').success(function(data) {
-        
+
+  
+
+
+/*    var tstamp = Math.round(+new Date()/1000);
+    var DataUrl = "http://jsonp.jit.su/?callback=JSON_CALLBACK&url=http://jsonview.com/example.json?aa=" + tstamp;
+    
+  	$http.jsonp(DataUrl).success(function(data) {
+        console.log("Data Recieved! ", data);
     });
-  */
-
-
+  
+*/
 
   }]);
  
